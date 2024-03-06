@@ -113,10 +113,7 @@ header {
       transform: translateY(0);
     }
   }
-/* Conteúdo inicial termina aqui */
-
-
-/*  ABOUT SECTION COMEÇA AQUI */
+/*  ABOUT SECTION  */
   section{
     height: 100vh;
   }
@@ -124,38 +121,63 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 2rem;
     background: #ffffff;
   }
-  .about h2{
-    padding-bottom: 15px;
+  .about-img img{
+    width: 35vw;
   }
-
-  .project{
-    display: flex;
-    margin: 25px;
-    padding: 25px;
-    gap:10px;
-  }
-
-  .project-titulo{
+  .about-h2{
     text-align: center;
-    flex-direction: row;
+    font-size: 4.5rem;
+  }
+  .about h2{
+    text-align: left;
+    line-height: 1.2;
+  }
+  .about p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem ;
+  }
+/*  PROJECTS SECTION */
+
+.project h2{
+  margin-bottom: 5rem;
+  
+}
+  .project-cards{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
   }
 
-  .project h4{
+  .project-cards .card{
+    flex: 1 1 30rem;
+    padding: 3rem 2rem 4rem;
+    background: #44475a;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #ffffff;
+    transition: .5s ease;
+  }
+
+  .project-cards .card:hover{
+    border-color: #895655;
+    transform: scale(1.02);
+  }
+  
+  /* .project h4{
     text-align: center;
     padding-bottom: 10px;
     color:#CCCCCC;
-    
     padding-top: 10px;
-  }
+  } */
 
 
-  .card{
-    background: #44475a;
+  /* .card{
+    
     border-radius: 20px;
     box-shadow: 2px 2px 100px 0 #0003;
     flex-shrink: 0;
@@ -169,4 +191,6 @@ header {
     color:#CCCCCC;
     line-height: 20px;
     margin: 0 1rem 3rem;
-  }
+  } */
+
+  
