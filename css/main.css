@@ -11,10 +11,20 @@
     font-weight: 300;
   }
 header {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background:  #d28574;
     border: 2px dotted #000;
+  }
+  #menu-icons{
+    font-size: 3.6rem;
+    color: red;
+    display: none;
   }
   
   .titulo {
@@ -43,39 +53,80 @@ header {
     height: 100vh;
   }
 
+  .texto-principal{
+    flex-direction: column;
+    max-width: 45%;
+    margin-top: 25px;
+    line-height: 2;
+    }
+
   .conteudo-inicial{
-    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
   }
  .conteudo-inicial h1{
   padding-top: 30px;
  }
   .conteudo-inicial p{
-    padding-top: 25px;
+    font-size: 1.6rem;
   }
   span{
     color:#44475a;
   }
-  .imagem-primaria {
+
+  .social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    text-decoration: none;
+    background: transparent;
+    border: .2rem solid #44475a;
+    border-radius: 50%;
+    transition: 0.5s ease;
+  }
+
+  .social a:hover{
+    background: #895655;
+    color: #e7a97e;
+  }
+
+  .imagem-primaria{
     width: 300px;
     height: 300px;
     border: 2px dotted #000;
     border-radius: 50%;
     margin-top: 25px;
+    animation: floatImage 4s ease-in-out infinite;
   }
 
+  @keyframes floatImage {
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-2.4rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+/* Conteúdo inicial termina aqui */
+
+
+/*  ABOUT SECTION COMEÇA AQUI */
   section{
-    border: 2px solid purple;
     height: 100vh;
-    /* margin: 50px;
-    text-align: center;
-    padding: 25px; */
   }
-
-
   .about{
-    margin: 25px;
-    text-align: center;
-    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: #ffffff;
   }
   .about h2{
     padding-bottom: 15px;
