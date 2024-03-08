@@ -18,17 +18,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:  #d28574;
-    border: 2px dotted #000;
+    background:  #a7dadc;
+    padding: 10px;
   }
-  #menu-icons{
+  /* #menu-icons{
     font-size: 3.6rem;
     color: red;
     display: none;
   }
-  
+   */
   .titulo {
-    color: #895655;
+    color: #447a9c;
   }
   
   .menu ul {
@@ -40,16 +40,20 @@ header {
   
   .menu ul li a {
     text-decoration: none;
-    color: #895655;
+    color: #447a9c;
   }
-  li:hover {
-    background-color:#e7a97e;
+
+  ul li a:hover {
+    color: #f2faef;
+    background: #447a9c;
+    border-radius: 8%;
+    padding: 10px;
   }
   main {
     text-align: center;
     flex-direction: column;
     width: 100%;
-    background: #e0ba9b;
+    background: #a7dadc;
     height: 100vh;
   }
 
@@ -63,16 +67,17 @@ header {
   .conteudo-inicial{
     display: flex;
     justify-content: space-around;
-    padding: 100px;
+    padding: 50px;
   }
  .conteudo-inicial h1{
-  padding-top: 30px;
+  padding-top: 15px;
  }
   .conteudo-inicial p{
     font-size: 1.6rem;
+    padding-top: 10px;
   }
   span{
-    color:#44475a;
+   background: linear-gradient(purple, blue);
   }
 
   .social a{
@@ -89,8 +94,8 @@ header {
   }
 
   .social a:hover{
-    background: #895655;
-    color: #e7a97e;
+    background: #447a9c;
+    color: #f2faef;
   }
 
   .imagem-primaria{
@@ -122,14 +127,15 @@ header {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: #ffffff;
+    background: #f2faef;
   }
   .about-img img{
     width: 35vw;
   }
   .about-h2{
+    color:#447a9c;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
   .about h2{
     text-align: left;
@@ -141,8 +147,14 @@ header {
   }
 /*  PROJECTS SECTION */
 
+.project{
+  background: #a7dadc;
+}
 .project h2{
   margin-bottom: 5rem;
+  padding-top: 5rem;
+  color:#447a9c;
+  font-size: 3.5rem;
   
 }
   .project-cards{
@@ -156,7 +168,7 @@ header {
   .project-cards .card{
     flex: 1 1 30rem;
     padding: 3rem 2rem 4rem;
-    background: #44475a;
+    background:#a7dadc;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid #ffffff;
@@ -164,33 +176,70 @@ header {
   }
 
   .project-cards .card:hover{
-    border-color: #895655;
+    border-color: #447a9c;
     transform: scale(1.02);
   }
-  
-  /* .project h4{
+  /*  SKILLS SECTION */
+
+  .skills-text{
     text-align: center;
-    padding-bottom: 10px;
-    color:#CCCCCC;
-    padding-top: 10px;
-  } */
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    }
 
-
-  /* .card{
-    
-    border-radius: 20px;
-    box-shadow: 2px 2px 100px 0 #0003;
-    flex-shrink: 0;
-    max-height: 300px;
-    max-width: 300px;
-
+  .skillis-img .imag-baixo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   padding: 2rem;
   }
 
-  .card p{
-    padding-top: 10px;
-    color:#CCCCCC;
-    line-height: 20px;
-    margin: 0 1rem 3rem;
-  } */
+  .skillis-img img{
+    width: 15%;
+    border: 3px solid red;
+    }
 
+  .imag-baixo img{
+    width: 15%;
+    border: 3px solid green;
+  }
+
+  .skillis-img {
+    animation: skillis 5s ease-in-out infinite;
+  }
+
+  .imag-baixo{
+    animation: baixo 5s ease-in-out infinite;
+  }
   
+  @keyframes skillis {
+    0%{
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+  @keyframes baixo {
+    0%{
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .skillis-img img:last-child,
+  .imag-baixo img:last-child {
+    animation-fill-mode: forwards;
+  }
+  
+
+
+
+ 
