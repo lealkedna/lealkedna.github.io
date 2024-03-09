@@ -59,10 +59,15 @@ header {
 
   .texto-principal{
     flex-direction: column;
-    max-width: 45%;
+    max-width: 600px;
     margin-top: 25px;
     line-height: 2;
     }
+  .texto-principal p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
 
   .conteudo-inicial{
     display: flex;
@@ -73,11 +78,11 @@ header {
   padding-top: 15px;
  }
   .conteudo-inicial p{
-    font-size: 1.6rem;
+    font-size: 1rem;
     padding-top: 10px;
   }
   span{
-   background: linear-gradient(purple, blue);
+    color: #447a9c;
   }
 
   .social a{
@@ -130,7 +135,9 @@ header {
     background: #f2faef;
   }
   .about-img img{
-    width: 35vw;
+    width: 30vw;
+    margin-right: 10px;
+		box-shadow: 10px 10px 100px 25px gray;
   }
   .about-h2{
     color:#447a9c;
@@ -140,10 +147,13 @@ header {
   .about h2{
     text-align: left;
     line-height: 1.2;
+    padding-left: 10px;
+   
   }
   .about p{
     font-size: 1.6rem;
     margin: 2rem 0 3rem ;
+    padding-left: 10px;
   }
 /*  PROJECTS SECTION */
 
@@ -155,7 +165,7 @@ header {
   padding-top: 5rem;
   color:#447a9c;
   font-size: 3.5rem;
-  
+  padding-left: 10px;
 }
   .project-cards{
     display: flex;
@@ -180,14 +190,24 @@ header {
     transform: scale(1.02);
   }
   /*  SKILLS SECTION */
-
+  .skills{
+  align-items: center;
+  }
+  .skills div{
+    padding-bottom: 10px;
+  }
   .skills-text{
     text-align: center;
     margin-left: auto;
     margin-bottom: auto;
-    margin-top: 10%;
+    padding-top: 10%;
     margin-bottom: 5%;
     }
+
+  .skills p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
 
   .skillis-img .imag-baixo{
    display: flex;
@@ -195,24 +215,27 @@ header {
    align-items: center;
    gap: 2rem;
    padding: 2rem;
+
   }
 
   .skillis-img img{
     width: 15%;
-    border: 3px solid red;
+   
     }
 
   .imag-baixo img{
     width: 15%;
-    border: 3px solid green;
+
   }
 
   .skillis-img {
     animation: skillis 5s ease-in-out infinite;
+    text-align: center;
   }
 
   .imag-baixo{
     animation: baixo 5s ease-in-out infinite;
+    text-align: center;
   }
   
   @keyframes skillis {
@@ -238,7 +261,62 @@ header {
   .imag-baixo img:last-child {
     animation-fill-mode: forwards;
   }
-  
+ 
+
+  /* responsividade */
+
+  @media screen and (max-width: 600px) {
+    .conteudo-inicial {
+        padding: 0 20px;
+        flex-direction: column-reverse;
+    }
+    .texto-principal h3{
+      width: 100%;
+    }
+    .texto-principal h1{
+     font-size: 10px;
+     
+    }
+    .texto-principal p{
+      font-size: 12px;
+    }
+    .social a{
+      width: 2rem;
+      height: 2rem;
+    }
+    .about-conteudo .about-img{
+      width: 100%;
+      flex-direction: column;
+    }
+    .about-h2{
+      font-size: 20px;
+    }
+    .about p{
+      font-size: 14px;
+    }
+    .project-cards {
+      flex-direction: column-reverse;
+      padding: 25px;
+      gap: 10px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 25px;
+  }
+  .skills-text h1{
+    font-size: 14px;
+  }
+  .skills-text p{
+    font-size: 10px;
+  }
+  .skills-text, .skillis-img {
+    width: 100%;
+}
+
+}
+
+
 
 
 
