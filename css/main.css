@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:  #a7dadc;
+    /*background:  #a7dadc;*/
     padding: 10px;
   }
   /* #menu-icons{
@@ -53,7 +53,7 @@ header {
     text-align: center;
     flex-direction: column;
     width: 100%;
-    background: #a7dadc;
+    /*background: #a7dadc;*/
     height: 100vh;
   }
 
@@ -103,6 +103,8 @@ header {
     color: #f2faef;
   }
 
+
+
   .imagem-primaria{
     width: 300px;
     height: 300px;
@@ -124,9 +126,6 @@ header {
     }
   }
 /*  ABOUT SECTION  */
-  section{
-    height: 100vh;
-  }
   .about{
     display: flex;
     justify-content: center;
@@ -158,7 +157,7 @@ header {
 /*  PROJECTS SECTION */
 
 .project{
-  background: #a7dadc;
+  /*background: #a7dadc;*/
 }
 .project h2{
   margin-bottom: 5rem;
@@ -178,7 +177,7 @@ header {
   .project-cards .card{
     flex: 1 1 30rem;
     padding: 3rem 2rem 4rem;
-    background:#a7dadc;
+    /*background:#a7dadc;*/
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid #ffffff;
@@ -188,6 +187,25 @@ header {
   .project-cards .card:hover{
     border-color: #447a9c;
     transform: scale(1.02);
+  }
+
+  .card a{
+    text-decoration: none;
+  }
+  .fa-calculator{
+    font-size: 50px;
+    color: purple;
+    text-decoration: none;
+    }
+    .fa-shield-dog{
+      font-size: 50px;
+      color: maroon;
+      
+    }
+  .fa-regular{
+    font-size: 50px;
+    color: green;
+    text-decoration: none;
   }
   /*  SKILLS SECTION */
   .skills{
@@ -296,24 +314,37 @@ header {
     }
     .project-cards {
       flex-direction: column-reverse;
-      padding: 25px;
+      padding: 2%;
       gap: 10px;
+      margin-bottom: 20%;
   }
 
-  .card {
-    max-width: 100%;
-    padding: 25px;
-  }
-  .skills-text h1{
-    font-size: 14px;
-  }
-  .skills-text p{
-    font-size: 10px;
-  }
-  .skills-text, .skillis-img {
-    width: 100%;
 }
 
+/* For screens smaller than 768px (tablets and below) */
+@media screen and (max-width: 768px) {
+  .skills-text {
+    padding-top: 20%;
+    margin-bottom: 2%;
+  }
+
+  .skillis-img img,
+  .imag-baixo img {
+    width: 20%;
+  }
+}
+
+/* For screens smaller than 576px (phones) */
+@media screen and (max-width: 576px) {
+  .skills-text {
+    padding-top: 100%;
+    margin-bottom: 10%;
+  }
+
+  .skillis-img img,
+  .imag-baixo img {
+    width: 20%;
+  }
 }
 
 
