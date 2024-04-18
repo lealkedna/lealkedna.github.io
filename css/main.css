@@ -16,20 +16,24 @@ header {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px;
 }
 
-.titulo {
-  color: #447a9c;
+.menu{
+  position: fixed;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  width: 100%;
+  padding: 2rem;
 }
-
 .menu ul {
   display: flex;
+  justify-content: center;
   list-style: none;
-  gap: 10px;
-  padding: 5px;
+  gap: 8rem;
+  padding-top: 2%;
 }
 
 .menu ul li a {
@@ -48,7 +52,7 @@ main {
   text-align: center;
   flex-direction: column;
   width: 100%;
-  /*background: #a7dadc;*/
+  background: #b6cead;
   height: 100vh;
 }
 
@@ -94,7 +98,7 @@ span {
   background: transparent;
   border: .2rem solid #44475a;
   border-radius: 50%;
-  transition: background 0.5s ease; /* Apenas animando a cor de fundo */
+  transition:  0.5s ease; /* Apenas animando a cor de fundo */
 }
 
 .social a:hover {
@@ -102,6 +106,19 @@ span {
   color: #f2faef;
 }
 
+.fa-instagram{
+  color:#EE00F5;
+}
+
+.fa-github{
+  color:black;
+}
+.fa-discord{
+  color: #7289da;
+}
+.fa-telegram{
+  color:#e0cfb1;
+}
 .imagem-primaria {
   width: 300px;
   height: 300px;
@@ -109,6 +126,7 @@ span {
   border-radius: 50%;
   margin-top: 25px;
   animation: floatImage 4s ease-in-out infinite;
+  box-shadow: 10px 10px 100px 25px gray
 }
 
 @keyframes floatImage {
@@ -160,6 +178,11 @@ span {
 }
 
 /*  PROJECTS SECTION */
+.project{
+  background: #f2faef;
+  height: 100vh;
+}
+
 .project h2 {
   margin-bottom: 5rem;
   padding-top: 5rem;
@@ -213,6 +236,7 @@ span {
 /*  SKILLS SECTION */
 .skills {
   align-items: center;
+  background: #b6cead;
 }
 
 .skills div {
@@ -241,11 +265,15 @@ span {
 }
 
 .skillis-img img {
-  width: 15%;
+  width: 10%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  
 }
 
 .imag-baixo img {
-  width: 15%;
+  width: 10%;
+ 
 }
 
 .skillis-img {
@@ -284,7 +312,7 @@ span {
 }
 
 /* responsividade */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .conteudo-inicial {
     padding: 0 20px;
     flex-direction: column-reverse;
@@ -319,8 +347,12 @@ span {
     font-size: 14px;
   }
 
+  .project{
+    height: 50vh;
+  }
+
   .project-cards {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 2%;
     gap: 10px;
     margin-bottom: 20%;
