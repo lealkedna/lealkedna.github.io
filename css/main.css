@@ -38,12 +38,12 @@ header {
 
 .menu ul li a {
   text-decoration: none;
-  color: #447a9c;
+  color: green;
 }
 
 ul li a:hover {
   color: #f2faef;
-  background: #447a9c;
+  background: #dcdcdc;
   border-radius: 8%;
   padding: 10px;
 }
@@ -85,7 +85,7 @@ main {
 }
 
 span {
-  color: #447a9c;
+  color: green;
 }
 
 .social a {
@@ -96,13 +96,13 @@ span {
   height: 4rem;
   text-decoration: none;
   background: transparent;
-  border: .2rem solid #44475a;
+  border: .2rem solid green;
   border-radius: 50%;
   transition:  0.5s ease; /* Apenas animando a cor de fundo */
 }
 
 .social a:hover {
-  background: #447a9c;
+  background: #dcdcdc;
   color: #f2faef;
 }
 
@@ -159,7 +159,7 @@ span {
 }
 
 .about-h2 {
-  color: #447a9c;
+  color: green;
   text-align: center;
   font-size: 3.5rem;
 }
@@ -186,7 +186,7 @@ span {
 .project h2 {
   margin-bottom: 5rem;
   padding-top: 5rem;
-  color: #447a9c;
+  color: green;
   font-size: 3.5rem;
   padding-left: 10px;
 }
@@ -204,11 +204,13 @@ span {
   border-radius: 2rem;
   text-align: center;
   border: .2rem solid #ffffff;
+  margin-bottom: 2%;
 }
 
 .project-cards .card:hover {
-  border-color: #447a9c;
+  border-color: #dcdcdc;
   transform: scale(1.02);
+  background: #dbead5;
 }
 
 .card a {
