@@ -196,6 +196,9 @@ span {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-cards .card {
@@ -205,6 +208,7 @@ span {
   text-align: center;
   border: .2rem solid #ffffff;
   margin-bottom: 2%;
+ 
 }
 
 .project-cards .card:hover {
